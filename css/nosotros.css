@@ -1,0 +1,333 @@
+@font-face{
+    font-family: "Start";
+    src: url(../fonts/PressStart2P-Regular.ttf) format("woff");
+    font-weight: normal;
+    font-style: cursive;    
+}
+@font-face{
+    font-family: "Right";
+    src: url(../fonts/Righteous-Regular.ttf) format("woff");
+    font-weight: normal;
+    font-style: cursive;    
+}
+@font-face{
+    font-family: "Sniglet";
+    src: url(../fonts/Sniglet-Regular.ttf) format("woff");
+    font-weight: normal;
+    font-style: cursive;    
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+li{
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+li a{
+    text-decoration: none;
+    color: white;    
+}
+body{
+    background-color: rgb(141,141,141);
+}
+/* Encabezado */
+.nav-img{
+    position: relative;
+    height: 0;
+    text-align: center;
+    z-index: 10;
+}
+.icon-menu{
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    background-color: black;
+    padding: 12px 10px 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.4em;
+    left: 15px;
+    top: 10px;
+}
+.logo{ 
+    width: 80px;
+    margin-top: 5px;
+}
+.social-icon-link{
+    text-decoration: none;
+    color:black;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 9px 7px 4px 7px;
+    cursor: pointer;
+}
+.social-icon{
+    position: absolute;
+    display: inline;
+	font-size: 1.4em;
+	right: 15px;
+	width: 85px;
+	height: 25px;
+	top: 20px;
+}
+.menu{
+    list-style-type: none;
+    font-family: 'Right', cursive;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .9);
+    width: 100%;
+    text-align: center;
+    height: 0;
+	overflow: hidden;
+    transition: height .4s linear;
+    top: 60px;
+    z-index: 10;
+}
+.mostrar{
+    height: 125px;
+}
+.activo{
+    background-color: #00467B;
+}
+.link{
+    transition: .5s linear;
+}
+.link:hover{
+    background-color: #00467B;
+}
+.modal{
+    position:absolute;
+    width: 50%;
+    top: 50px;
+    right: 15px; 
+    z-index: 100;
+    display: none;
+}
+.contenido-modal{
+    background-color:rgba(255,255,255,0.8);  
+    padding: 10px 20px;
+    position: absolute;
+    font-size: 15px;
+    border-radius: 10px;
+    font-family: 'Sniglet';
+    text-align: center;
+}
+.contenido-modal p{
+    padding: 0 10px 10px 10px;
+}
+.img-modal{
+    width: 20%;
+}
+.modal-btn{
+    background-color: #00467B;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 25px;
+    font-size: 11px;
+    position: absolute;
+    z-index: 100;
+    right: 5px;
+    top: 5px;
+    padding: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Right'; 
+}
+.abrir-modal {
+    display: block;
+}
+/* SECCION DEL BANNER*/
+.banner{
+    background-image: url(../img/banner2.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;    
+    z-index: -10;
+}
+.banner p{
+    font-size: 18px;
+    font-family: 'Start';
+}
+/*SECCION INFORMACION */
+    .seccion{
+        margin: 10px;
+        background-image: url(../img/white-waves.png);
+    }
+    .informacion{
+        padding: 10px;
+    }
+    .titulo{
+        text-align: center;
+        padding: 5px;
+        font-family: 'Start';
+        font-size: 18px;
+    }
+    .txt{
+        text-align: justify;
+        padding: 10px 20px;
+        font-family: 'Sniglet';
+        font-size: 16px;
+    }
+    .txt a{
+        text-decoration: none;
+        color: #00467B;
+        font-weight: bold;
+    }
+    .informacion-img {
+        display: flex;
+        justify-content: center;
+    }
+    .img-nosotros{
+        width: 120px;
+        height: 180px;
+        margin: 10px;
+        border-radius: 50%;
+        border: 2px solid black;
+        padding: 3px;
+    }
+    .img-boton{
+        width: 160px;
+    }
+/* PIE DE PAGINA */
+.pie-pagina{
+    background-color: #222;
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+}
+.columna{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+.columna a{
+    text-decoration:none;
+    padding: 5px;
+    color: #fff;
+    font-family: 'Sniglet';
+    transition: .5s linear;
+}
+.columna a:hover{
+    color: #00467B;
+}
+.columna p{
+    padding: 10px;
+    font-family: 'Start';
+}
+.desarrollo{
+    color: #fff;
+    padding: 10px 5px 0px 5px;
+    font-family: 'Sniglet';
+}
+/* RESPONSIVO */
+@media screen and (min-width:480px){
+    .pie-pagina{
+        flex-direction: row; 
+    }
+    .columna{
+        width: 33%;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 105px;
+    }
+    .columna p{
+        font-size: 14px;
+    }
+    .columna a{
+        font-size: 14px;
+        padding: 0;
+    }
+}
+@media screen and (min-width:768px){
+    .contenido-modal{
+        font-size: 20px;
+    }
+    .modal-btn{
+        font-size: 15px;
+        top: 8px;
+    }
+    .banner p{
+        font-size: 20px;
+    }
+    .seccion{
+        max-width: 1000px;
+        margin: 10px auto;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    .txt{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:1024px){
+    li{
+        border-bottom: none;
+        padding: 15px 10px 15px 10px;
+    }
+    li a{
+        font-size: 20px;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .logo{
+        position: absolute;
+        left: 15px;
+        top: -5px;
+    }
+    .social-icon{
+        top: 80px;
+    }
+    .menu{
+        overflow:visible;
+        position: absolute;
+		display: flex;
+		height: auto;
+        width: auto;
+        right: 15px;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .modal{
+        top: 110px;
+    }
+    .modal-btn{
+        font-size: 20px;
+        width: 30px;
+    }
+    .banner p{
+        font-size: 30px;
+    }
+    .seccion{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 5px double black;
+        border-radius: 10px;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .txt{
+        font-size: 20px;
+        
+    }
+}

@@ -1,0 +1,392 @@
+@font-face{
+    font-family: "Start";
+    src: url(../fonts/PressStart2P-Regular.ttf) format("woff");
+    font-weight: normal;
+    font-style: cursive;    
+}
+@font-face{
+    font-family: "Right";
+    src: url(../fonts/Righteous-Regular.ttf) format("woff");
+    font-weight: normal;
+    font-style: cursive;    
+}
+@font-face{
+    font-family: "Sniglet";
+    src: url(../fonts/Sniglet-Regular.ttf) format("woff");
+    font-weight: normal;
+    font-style: cursive;    
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+li{
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+li a{
+    text-decoration: none;
+    color: white;    
+}
+/* Encabezado */
+.nav-img{
+    position: relative;
+    height: 0;
+    text-align: center;
+    z-index: 10;
+}
+.icon-menu{
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    background-color: black;
+    padding: 12px 10px 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.4em;
+    left: 15px;
+    top: 10px;
+}
+.logo{ 
+    width: 80px;
+    margin-top: 5px;
+}
+.social-icon-link{
+    text-decoration: none;
+    color:black;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 9px 7px 4px 7px;
+    cursor: pointer;
+}
+.social-icon{
+    position: absolute;
+    display: inline;
+	font-size: 1.4em;
+	right: 15px;
+	width: 85px;
+	height: 25px;
+	top: 20px;
+}
+.menu{
+    list-style-type: none;
+    font-family: 'Right', cursive;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .9);
+    width: 100%;
+    text-align: center;
+    height: 0;
+	overflow: hidden;
+    transition: height .4s linear;
+    top: 60px;
+    z-index: 10;
+}
+.mostrar{
+    height: 125px;
+}
+.activo{
+    background-color: #00467B;
+}
+.link{
+    transition: .5s linear;
+}
+.link:hover{
+    background-color: #00467B;
+}
+.modal{
+    position:absolute;
+    width: 50%;
+    top: 50px;
+    right: 15px; 
+    z-index: 100;
+    display: none;
+}
+.contenido-modal{
+    background-color:rgba(255,255,255,0.8);  
+    padding: 10px 20px;
+    position: absolute;
+    font-size: 15px;
+    border-radius: 10px;
+    font-family: 'Sniglet';
+    text-align: center;
+}
+.contenido-modal p{
+    padding: 0 10px 10px 10px;
+}
+.img-modal{
+    width: 20%;
+}
+.modal-btn{
+    background-color: #00467B;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 25px;
+    font-size: 11px;
+    position: absolute;
+    z-index: 100;
+    right: 5px;
+    top: 5px;
+    padding: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Right'; 
+}
+.abrir-modal {
+    display: block;
+}
+/* SECCION DEL BANNER*/
+.banner{
+    background-image: url(../img/banner3-movil.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;    
+    z-index: -10;
+}
+.banner p{
+    font-size: 15px;
+    font-family: 'Start';
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5em;
+}
+/* COMENTARIOS */
+.seccion-comentarios{
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns:  repeat(9, 1fr);
+}
+.comentario-info, .comentario{
+    padding: 10px;
+    grid-column: 1/10;
+}
+.columna2, .columna3,.columna4,.columna7,
+.columna8,.columna9{
+    background-color: linear-gradient(top, #EADEDE,#eadede9f,#eadede4b);
+    background:-webkit-linear-gradient(top,  #EADEDE,#eadede9f,#eadede4b);
+    background:-moz-linear-gradient(top, #EADEDE,#eadede9f,#eadede4b);
+    background:-o-linear-gradient(top, #EADEDE,#eadede9f,#eadede4b);
+    background:-ms-linear-gradient(top, #EADEDE,#eadede9f,#eadede4b);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+}
+.columna3,.columna7,.columna9{
+    background-color: linear-gradient(top, #D6CCCC,#D6CCCC9f,#D6CCCC4b);
+    background:-webkit-linear-gradient(top,  #D6CCCC,#D6CCCC9f,#D6CCCC4b);
+    background:-moz-linear-gradient(top, #D6CCCC,#D6CCCC9f,#D6CCCC4b);
+    background:-o-linear-gradient(top, #D6CCCC,#D6CCCC9f,#D6CCCC4b);
+    background:-ms-linear-gradient(top, #D6CCCC,#D6CCCC9f,#D6CCCC4b);
+}
+.comentario-titulo{
+    padding: 10px;
+    text-align: center;
+    font-family: 'Start';
+}
+.comentario-txt{
+    text-align: justify;
+    padding: 5px;
+    margin-top: 15px;
+    font-family: 'Sniglet';
+}
+.icono{
+    display: inline-block;
+    font-size: 80px;
+    width: 40px;
+    height: 50px;
+    color: gray;
+    margin: -60px 0 20px 5px;
+    font-family: 'Right';
+}
+.txt{
+    padding: 10px;
+    text-align: justify;
+    font-family: 'Sniglet';
+    margin-top: -20px;
+}
+.comentario{
+    position: relative;
+}
+.autor{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    color: #00467B;
+    font-family: 'Sniglet';
+}
+/* PIE DE PAGINA */
+.pie-pagina{
+    background-color: #222;
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+}
+.columna{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+.columna a{
+    text-decoration:none;
+    padding: 5px;
+    color: #fff;
+    font-family: 'Sniglet';
+    transition: .5s linear;
+}
+.columna a:hover{
+    color: #00467B;
+}
+.columna p{
+    padding: 10px;
+    font-family: 'Start';
+}
+.desarrollo{
+    color: #fff;
+    padding: 10px 5px 0px 5px;
+    font-family: 'Sniglet';
+}
+/* RESPONSIVO */
+@media screen and (min-width:480px){
+    .banner{
+        background-image: url(../img/banner3-tablet.png);
+    }
+    .seccion-comentarios{
+        gap: 0;
+    }
+    .columna1, .columna3, .columna5, .columna7, .columna9{
+        grid-column: span 4;
+        height: 250px;
+    }
+    .columna2, .columna4, .columna6, .columna8{
+        grid-column: span 5;
+        height: 250px;
+    }
+    .pie-pagina{
+        flex-direction: row;        
+    }
+    .columna{
+        width: 33%;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 105px;
+    }
+    .columna p{
+        font-size: 14px;
+    }
+    .columna a{
+        font-size: 14px;
+        padding: 0;
+    }
+}
+@media screen and (min-width:768px){
+    .banner{
+        background-image: url(../img/banner3.png);
+    }
+    .banner p{
+        font-size: 20px;
+    }
+    .comentario-titulo{
+        font-size: 26px;
+    }
+    .comentario-txt{
+        font-size: 22px;
+        margin-top: 50px;
+    }
+    .icono{
+        font-size: 140px;
+        margin-top: -110px;
+    }
+    .txt{
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .autor{
+        font-size: 17px;
+    }
+    .columna1{
+        grid-column: span 6;
+        height: 300px;
+    }
+    .columna2{
+        grid-column: span 3;
+        height: 300px;
+    }
+    .columna3, .columna4, .columna5, .columna6,
+    .columna7, .columna8, .columna9{
+        grid-column: span 3;
+        height: 300px;
+    }
+    .seccion-comentarios{
+        max-width: 1100px;
+        margin: 10px auto;
+    }
+}
+@media screen and (min-width:1024px){
+    li{
+        border-bottom: none;
+        padding: 15px 10px 15px 10px;
+    }
+    li a{
+        font-size: 20px;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .logo{
+        position: absolute;
+        left: 15px;
+        top: -5px;
+    }
+    .social-icon{
+        top: 80px;
+    }
+    .menu{
+        overflow:visible;
+        position: absolute;
+		display: flex;
+		height: auto;
+        width: auto;
+        right: 15px;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .modal{
+        top: 110px;
+    }
+    .modal-btn{
+        font-size: 20px;
+        width: 30px;
+    }
+    .banner p{
+        font-size: 30px;
+    }
+    .comentario-titulo{
+        font-size: 28px;
+    }
+    .comentario-txt{
+        font-size: 24px;
+    }
+    .txt{
+        font-size: 20px;
+    }
+}
