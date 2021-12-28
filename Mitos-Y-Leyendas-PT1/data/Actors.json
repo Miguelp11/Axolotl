@@ -1,0 +1,6 @@
+[
+null,
+{"id":1,"battlerName":"jugador1","characterIndex":0,"characterName":"jugador1","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"jugador1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Jugador1","nickname":"","note":"","profile":""},
+{"id":2,"battlerName":"jugadora1","characterIndex":0,"characterName":"jugadora1","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"jugadora1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Jugadora1","nickname":"","note":"","profile":""},
+{"id":3,"battlerName":"Actor3_6","characterIndex":5,"characterName":"Nature","classId":3,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"cara axolote","traits":[],"initialLevel":1,"maxLevel":99,"name":"Axolotl","nickname":"","note":"","profile":""}
+]
